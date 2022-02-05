@@ -24,7 +24,7 @@ public class ZeusApiResponse<E> {
     /**
      * Time stamp when the response was generated
      */
-    //private LocalDateTime timestamp;
+    private LocalDateTime timestamp;
 
     private int statusCode;
 
@@ -42,7 +42,7 @@ public class ZeusApiResponse<E> {
     @Override
     public String toString() {
         return "ZeusApiResponse{" +
-                //"timestamp=" + timestamp +
+                "timestamp=" + timestamp +
                 ", statusCode=" + statusCode +
                 ", status=" + status +
                 ", reason='" + reason + '\'' +
