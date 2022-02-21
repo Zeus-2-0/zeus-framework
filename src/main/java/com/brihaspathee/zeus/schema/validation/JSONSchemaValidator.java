@@ -25,7 +25,7 @@ import java.util.Set;
 @Slf4j
 public class JSONSchemaValidator {
 
-    public void validateJSON(JSONSchemaObject jsonSchemaObject, InputStream inputStream) throws JsonProcessingException {
+    public void validateJSON(JSONSchemaObject jsonSchemaObject, InputStream inputStream, String apiName) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
         String requestString = objectMapper.writeValueAsString(jsonSchemaObject.getSchemaObject());
         //InputStream schemaAsStream = TradingPartnerResource.class.getClassLoader().getResourceAsStream("model/tradingPartner.schema.json");
@@ -38,7 +38,7 @@ public class JSONSchemaValidator {
             errorsCombined += validationMessage.toString() + "\n";
         }
         if(errors.size() > 0){
-            throw new ZeusApiValidationException(errors);
+            throw new ZeusApiValidationException(errors, apiName);
         }
     }
 }
