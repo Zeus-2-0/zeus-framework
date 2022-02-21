@@ -1,6 +1,7 @@
 package com.brihaspathee.zeus.exception;
 
 import com.networknt.schema.ValidationMessage;
+import lombok.Getter;
 
 import java.util.Set;
 
@@ -13,6 +14,7 @@ import java.util.Set;
  * Package Name: com.brihaspathee.zeus.exception
  * To change this template use File | Settings | File and Code Template
  */
+@Getter
 public class ZeusApiValidationException extends RuntimeException{
 
     private Set<ValidationMessage> validationMessages;
