@@ -4,7 +4,7 @@
 
     <groupId>com.brihaspathee.zeus</groupId>
     <artifactId>zeus-framework</artifactId>
-    <version>1.0.9</version>
+    <version>1.0.10-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>zeus-framework</name>
     <description>Common Classes for all Zeus Microservices</description>
@@ -27,7 +27,7 @@
         <!--        <developerConnection>scm:git:ssh://github.com:Zeus-2-0/zeus-framework.git</developerConnection>-->
         <developerConnection>scm:git:git@github.com:Zeus-2-0/zeus-framework.git</developerConnection>
         <url>scm:git:http://github.com/Zeus-2-0/zeus-framework</url>
-        <tag>zeus-framework-1.0.9</tag>
+        <tag>1.0.0</tag>
     </scm>
 
     <developers>
