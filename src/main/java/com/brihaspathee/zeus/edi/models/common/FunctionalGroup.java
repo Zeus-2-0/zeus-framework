@@ -136,4 +136,25 @@ public class FunctionalGroup {
      */
     @Builder.Default
     private Set<Transaction> transactionSet = new HashSet<>();
+
+    /**
+     * toString method to display the values
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "FunctionalGroup{" +
+                "gs01='" + gs01 + '\'' +
+                ", gs02='" + gs02 + '\'' +
+                ", gs03='" + gs03 + '\'' +
+                ", gs04='" + gs04 + '\'' +
+                ", gs05='" + gs05 + '\'' +
+                ", gs06='" + gs06 + '\'' +
+                ", gs07='" + gs07 + '\'' +
+                ", gs08='" + gs08 + '\'' +
+                ", ge01='" + ge01 + '\'' +
+                ", ge02='" + ge02 + '\'' +
+                ", transactionSet=" + transactionSet +
+                '}';
+    }
 }
