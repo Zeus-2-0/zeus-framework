@@ -204,4 +204,29 @@ public class Interchange {
      */
     @Builder.Default
     private Set<FunctionalGroup> functionalGroupSet = new HashSet<>();
+
+    @Override
+    public String toString() {
+        return "Interchange{" +
+                "isa01='" + isa01 + '\'' +
+                ", isa02='" + isa02 + '\'' +
+                ", isa03='" + isa03 + '\'' +
+                ", isa04='" + isa04 + '\'' +
+                ", isa05='" + isa05 + '\'' +
+                ", isa06='" + isa06 + '\'' +
+                ", isa07='" + isa07 + '\'' +
+                ", isa08='" + isa08 + '\'' +
+                ", isa09='" + isa09 + '\'' +
+                ", isa10='" + isa10 + '\'' +
+                ", isa11='" + isa11 + '\'' +
+                ", isa12='" + isa12 + '\'' +
+                ", isa13='" + isa13 + '\'' +
+                ", isa14='" + isa14 + '\'' +
+                ", isa15='" + isa15 + '\'' +
+                ", isa16='" + isa16 + '\'' +
+                ", iea01='" + iea01 + '\'' +
+                ", iea02='" + iea02 + '\'' +
+                ", functionalGroupSet=" + functionalGroupSet +
+                '}';
+    }
 }
