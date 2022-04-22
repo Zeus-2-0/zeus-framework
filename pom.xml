@@ -4,7 +4,7 @@
 
     <groupId>com.brihaspathee.zeus</groupId>
     <artifactId>zeus-framework</artifactId>
-    <version>1.0.13-SNAPSHOT</version>
+    <version>1.0.14-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>zeus-framework</name>
     <description>Common Classes for all Zeus Microservices</description>
