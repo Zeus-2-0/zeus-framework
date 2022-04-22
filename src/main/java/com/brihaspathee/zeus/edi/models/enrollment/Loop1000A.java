@@ -22,12 +22,12 @@ public class Loop1000A {
     /**
      * Identifies the sponsor details
      */
-    private N1 n1;
+    private N1 sponsor;
 
     @Override
     public String toString() {
         return "Loop1000A{" +
-                "n1=" + n1 +
+                "sponsor=" + sponsor +
                 '}';
     }
 }

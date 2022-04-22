@@ -1,8 +1,5 @@
 package com.brihaspathee.zeus.edi.models.enrollment;
 
-import com.brihaspathee.zeus.edi.models.common.DTP;
-import com.brihaspathee.zeus.edi.models.common.INS;
-import com.brihaspathee.zeus.edi.models.common.REF;
 import lombok.*;
 
 import java.util.HashSet;
@@ -11,8 +8,8 @@ import java.util.Set;
 /**
  * Created in Intellij IDEA
  * User: Balaji Varadharajan
- * Date: 21, February 2022
- * Time: 9:05 PM
+ * Date: 19, April 2022
+ * Time: 2:11 PM
  * Project: Zeus
  * Package Name: com.brihaspathee.zeus.edi.models.enrollment
  * To change this template use File | Settings | File and Code Template
@@ -22,29 +19,7 @@ import java.util.Set;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Loop2000 {
-
-    /**
-     * Contains the details of the member
-     */
-    private INS memberDetail;
-
-    /**
-     * Contains different identifiers of the member
-     */
-    private REF subscriberIdentifier;
-
-    /**
-     * Contains other supplmental identifiers of the member
-     */
-    @Builder.Default
-    private Set<REF> memberSupplementalIdentifiers = new HashSet<>();
-
-    /**
-     * Contains dates that are related to member
-     */
-    @Builder.Default
-    private Set<DTP> memberLevelDates = new HashSet<>();
+public class Loop2100 {
 
     /**
      * Contains member demographics
@@ -84,40 +59,16 @@ public class Loop2000 {
      */
     private Loop2100H dropOffLocation;
 
-    /**
-     * Contains any disabilities of the member
-     */
-    @Builder.Default
-    private Set<Loop2200> disabilities = new HashSet<>();
-
-    /**
-     * Contains health coverage details of the member
-     */
-    @Builder.Default
-    private Set<Loop2300> healthCoverages = new HashSet<>();
-
-    /**
-     * Contains the reporting categories received for the member in the transaction
-     */
-    private Loop2700 reportingCategories;
-
     @Override
     public String toString() {
-        return "Loop2000{" +
-                "memberDetail=" + memberDetail +
-                ", subscriberIdentifier=" + subscriberIdentifier +
-                ", memberSupplementalIdentifiers=" + memberSupplementalIdentifiers +
-                ", memberLevelDates=" + memberLevelDates +
-                ", memberDemographics=" + memberDemographics +
+        return "Loop2100{" +
+                "memberDemographics=" + memberDemographics +
                 ", incorrectMemberAddress=" + incorrectMemberAddress +
                 ", employers=" + employers +
                 ", schools=" + schools +
                 ", custodialParent=" + custodialParent +
                 ", responsiblePersons=" + responsiblePersons +
                 ", dropOffLocation=" + dropOffLocation +
-                ", disabilities=" + disabilities +
-                ", healthCoverages=" + healthCoverages +
-                ", reportingCategories=" + reportingCategories +
                 '}';
     }
 }
